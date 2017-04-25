@@ -4,10 +4,22 @@ var path = require("path");
  *COMMAND JS的导出语法
  */
 module.exports = {
+  devtool: 'eval-source-map',
   entry: {app: './index.js'},
   output: {
    filename: 'bundle.js',
    path: __dirname + '/build'
+ },
+ module:{
+   rules: [
+      {
+        test: /\.jsx?$/,
+        use: [
+          'babel-loader',
+        ],
+        exclude: /node_modules/
+      },
+    ],
  },
  devServer: {
    port:8080,
