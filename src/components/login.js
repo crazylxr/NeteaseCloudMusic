@@ -11,9 +11,11 @@ export default class Login extends React.Component{
   }
 
   login(){
-    const url = 'http://localhost:3000/user/playlist?uid=330648432';
+    const url = 'http://119.29.16.43:3000/user/playlist?uid=330648432';
     fetchAsync(url,'get').then(res=>res.json()).
     then((res)=>console.log(res));
+    console.log(66);
+
   }
 
   render(){
@@ -22,7 +24,7 @@ export default class Login extends React.Component{
           账号：<input  /><br />
           密码：<input type='password'/>
           <br />
-          <button onClick={this.login()}>Login()</button>
+          <button onClick={this.login}>Login()</button>
       </div>
 
     );
