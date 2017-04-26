@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --devtool eval-source-map --progress  --content-base ./dist"
+    "dev": "webpack-dev-server --devtool source-map --progress  --content-base ./dist"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,11 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "react-hot-loader": "^3.0.0-beta.6",
+    "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.2"
   },
