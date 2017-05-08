@@ -37,17 +37,27 @@ export default class Login extends React.Component{
     }
 
     return (
-      <div className="body" style={{background:'#95c124',margin:'0 auto'}}>
-        <div className="content" style={contentStyle}>
-          <div className="left" style={leftStyle}>
+      <div className="body" >
+        <div className="content" >
+          <div className="sing">
+            <img src={Sing}/>
+          </div>
+          <div className="left" >
             <img src={bg}></img>
           </div>
-          <div className='right' style={rightStyle}>
-            账号：<input  /><br />
-            密码：<input type='password'/>
-            <br />
-            <button onClick={this.login}>Login()</button>
-            <img src={btn_login} alt='登录按钮'></img>
+          <div className='right'>
+            <h1 className="loginText">登录</h1>
+            <div className="logonContent">
+              <span className="usernameText">用户名：</span><br />
+              <input className="text username" value=""/><br />
+              <span className="passwordText">密码：</span><br />
+              <input className="text password" type='password'/>
+              <br />
+              <div className="remberpassword">
+                <input type='checkbox'  value=""/> 记住密码
+              </div>
+              <button className="loginButton" type="button" name="button">登录</button>
+            </div>
           </div>
         </div>
       </div>

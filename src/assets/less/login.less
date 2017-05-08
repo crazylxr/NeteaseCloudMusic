@@ -1,16 +1,95 @@
-.content:before,
-.content:after {
-  content: "";
-  display: table;
+html {
+    margin:0 auto;
+    padding:0;
+    height: 100%;
 }
-.content:after {
-  clear: both;
+body{
+    margin: 0;
+    padding: 0;
 
+    height: 100%;
 }
-.content {
-    background: red;
-  *zoom: 1;
+
+#content{
+  height: 100%;
 }
-.right {
-  background: red;
+.body{
+  background: #95c124;
+  display: flex;
+  display: -webkit-flex;
+  justify-content:center;
+  align-items:center;
+  height: 100%;
+}
+.content{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.left{
+  /*float: left;*/
+  width: 660px;
+  height: 590px;
+}
+.right{
+  background: white;
+  width: 415px;
+  height: 590px;
+  /*float: left;*/
+}
+.loginText{
+  font-size: 24px;
+  color: #cbe886;
+  position: relative;
+  left: 55px;
+  top: 65px;
+}
+.logonContent{
+  position: relative;
+  left: 60px;
+  top: 70px;
+}
+.usernameText{
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+.passwordText{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+.text{
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  outline:medium;
+  width: 295px;
+  font-size: 16px;
+  color: #666;
+  // background-color: transparent;
+}
+.remberpassword{
+  margin-top: 20px;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+.sing{
+  position: absolute;;
+  top: 0;
+}
+.loginButton{
+  background: #b7e04b;
+  color: white;
+  border: none;
+  width: 300px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor:pointer;
+  outline: none;
 }
