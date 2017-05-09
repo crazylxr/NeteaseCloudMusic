@@ -10,6 +10,11 @@ import icon_song from "../assets/img/homgpage/icon_song.png";
 import icon_mv from "../assets/img/homgpage/icon_mv.png";
 import icon_hotsinger from "../assets/img/homgpage/icon_hotsinger.png";
 import icon_myMusic from "../assets/img/homgpage/icon_myMusic.png";
+import footer from "../assets/img/homgpage/footer.png";
+
+import recommentMusic from "./recommentMusic.js";
+import recommentSongSheet from "./recommentSongSheet.js";
+import hotSinger from "./hotSinger.js";
 
 export default class Home extends React.Component{
   render(){
@@ -48,102 +53,12 @@ export default class Home extends React.Component{
         </nav>
         <div className="content">
           <div className="recomment" style={{  background: "url(bg2)"}}>
-            <section className="recommentMusic">
-              <div className="title_content title_recommentMusic">
-                <img src="./img/icon_music.png" alt="" />
-                <span className="titleText">每日推荐歌曲</span>
-                <a className="titleMore" href="#">MORE>></a>
-              </div>
-              <div className="sing_recommentMusic">
-                <img src="./img/pic1.png" alt="sing1"/>
-                <img src="./img/pic2.png" alt="sing2"/>
-                <img src="./img/pic3.png" alt="sing3"/>
-              </div>
-            </section>
-            <section className="recommentSongSheet">
-              <div className="title_content title_recommentSongSheet">
-                <img src="./img/icon_list.png" alt=""/>
-                <span className="titleText">每日推荐歌单</span>
-                <a className="titleMore" href="#">MORE>></a>
-              </div>
-              <div className="song_recommentSongSheet">
-                <div className="recommentSing recommentSongSheet1">
-                  <img src="./img/pic4.png" alt="recommentSongSheet1"/>
-                  <div className="rec_description">
-                    <div className="SongSheetName">
-                          <h3>回忆伤人无声,唱不尽世间遗憾</h3>
-                    </div>
-                    <div className="SongSheetDes">
-                      <p>恋一坐城，是一种执着的情。
-                      生命的扉页里，总是你的影。</p>
-                      <img src="./img/btn_more.png" alt=""/>
-                    </div>
-                  </div>
-                </div>
-                <div className="recommentSing recommentSongSheet2">
-                  <img src="./img/pic5.png" alt="recommentSongSheet2"/>
-                  <div className="rec_description">
-                    <div className="SongSheetName">
-                      <h3>回忆伤人无声,唱不尽世间遗憾</h3>
-                    </div>
-                    <div className="SongSheetDes">
-                      <p>恋一坐城，是一种执着的情。
-                      生命的扉页里，总是你的影。</p>
-                      <img src="./img/btn_more.png" alt=""/>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            {recommentMusic()}
+            {recommentSongSheet()}
           </div>
-
-          {/* <section className="hotSinger">
-            <div className="" style={{display:"flex",justifyContent:"center"}}>
-              <img src="./img/icon_singer.png" alt="热门歌手"/>
-            </div>
-            <div className="" style={{display:"flex",justifyContent:"center",fontSize:"22px",color:"#333"}}>
-              热门歌手
-            </div>
-            <div className="singers" style={{width:"900px",margin:"0 auto"}}>
-              <div className="singer1" style={{position:"relative",display:"flex",justifyContent:"flex-end",alignItems:"center"}}>
-                <img className="circle_img circleRight" src="./img/circle.png"  alt=""/>
-                <div style="width:1px;height:65px;background:#333;position:relative;right:8px;top:45px;">
-
-                </div>
-                <div  style="background:#333; height:1px;width:24%;">
-                </div>
-                <div className="" style="display:flex;justify-content:flex-end;align-items:center;width:25%;">
-                  <span className="no">TOP1</span>
-                  <span className="singername">赵雷</span>
-                  <img src="./img/singer1.png" alt="singer1"/>
-                </div>
-              </div>
-              <div className="singer2" style="position:relative;display:flex;justify-content:flex-start;align-items:center;">
-                <div className="" style="display:flex;align-items:center;width:25%;">
-                  <img src="./img/singer2.png"  alt="singer2"/>
-                  <span className="no">TOP2</span>
-                  <span className="singername">许巍</span>
-                </div>
-                <div className="" style="background:#333; height:1px;width:24%;"></div>
-                <img className="circle_img" src="./img/circle.png" style="position:absolute;left:45%;" alt=""/>
-                <div className="" style="position:relative;width:1px;height:65px;background:#333;left:9px;top:45px;">
-                </div>
-              </div>
-
-            <div className="singer3" style="position:relative;display:flex;justify-content:flex-end;align-items:center;">
-              <img className="circle_img circleRight" src="./img/circle.png"  alt=""/>
-              <div className="" style="background:#333; height:1px;width:24%;">
-              </div>
-              <div style="display:flex;justify-content:flex-end;align-items:center;width:25%;">
-                <span className="no">TOP3</span>
-                <span className="singername">梁博</span>
-                <img src="./img/singer3.png" alt="singer3"/>
-              </div>
-            </div>
-            </div>
-          </section> */}
-          </div>
-        <footer style={{background:"url('./img/footer.png')",height:"130px",width:"100%",marginTop:"20px"}}>
+        </div>
+          {hotSinger()}
+       <footer style={{background:`url(${footer})`,height:"130px",width:"100%",marginTop:"20px"}}>
 
         </footer>
       </div>
