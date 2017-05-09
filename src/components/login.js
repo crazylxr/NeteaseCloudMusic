@@ -16,18 +16,34 @@ export default class Login extends React.Component{
     this.state ={
       auth:false,
       username:"18983412712",
-      password:"li960221",
+      password:"li96022",
     }
   }
 
+  usernameChange(e){
+    this.setState({
+      username:e.target.value
+    });
+  }
+
+  passwordChange(e){
+    this.setState({
+      password:e.target.value
+    });
+  }
+
   login(){
-    const url = 'http://localhost:3000/user/playlist?uid=330648432';
+    const {username,password} = this.state;
+    const url = `http://localhost:3000/login/cellphone?phone=${username}&password=${password}`;
     fetchAsync(url,'get').then(res=>res.json()).
     then((res)=>{
-      history.push("/home");
-      this.setState({
-        auth:true
-      });
+      if(res.code === 200){
+        history.push("/home");
+        this.setState({
+          auth:true
+        });
+      }
+
       console.log(res)
     });
     console.log(66);
@@ -69,9 +85,9 @@ export default class Login extends React.Component{
             <h1 className="loginText">登录</h1>
             <div className="logonContent">
               <span className="usernameText">用户名：</span><br />
-              <input className="text username" value=""/><br />
+              <input onChange={this.usernameChange.bind(this)} className="text username" /><br />
               <span className="passwordText">密码：</span><br />
-              <input className="text password" type='password'/>
+              <input onChange={this.passwordChange.bind(this)} className="text password" type='password'/>
               <br />
               <div className="remberpassword">
                 <input type='checkbox'  value=""/> 记住密码
