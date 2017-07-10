@@ -4,7 +4,6 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
  *COMMAND JS的导出语法
  */
 module.exports = {
-    devtool: 'eval-source-map',
     entry: {
         app: './index.js'
     },
