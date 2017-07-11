@@ -1,0 +1,9 @@
+.tabs{
+  display: flex;
+  justify-content: space-around;
+}
+.tabPane{
+  padding: 10px 5px;
+  border-bottom: 2px solid rgb(231, 25, 54);
+  text-align: center;
+}
