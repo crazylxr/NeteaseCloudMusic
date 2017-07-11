@@ -17,7 +17,7 @@ import style from "./style/index.css";
   getPanes(){
     const {children} = this.props;
 
-     let selectIndex = 0;
+    //  let selectIndex = 0;
     // children.forEach((child, idx) => {
     //   if(child.props.selected){
     //     selected = idx;

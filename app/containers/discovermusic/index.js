@@ -1,6 +1,6 @@
 import React from "react";
 import TabBar from "../../components/TabBar/index";
-import style from "./style/index.less";
+import style from "./style/index.css";
 
 import mike_img from "./img/麦克.svg";
 
@@ -14,8 +14,8 @@ export default class DiscoverMusic extends React.Component{
     return (
       <div>
         <div className={style.indexSearch}>
-          <img src={mike_img} alt="麦克"/>
-          <input type='text'></input>
+          <img className={style.indexSearchImg} src={mike_img} alt="麦克"/>
+          <input className={style.indexSearchInput} type='text' placeholder="🔍    搜索音乐、歌词、电台"></input>
         </div>
         <TabBar>
           <TabBar.Item icon={findMuscic_img} title="发现音乐">

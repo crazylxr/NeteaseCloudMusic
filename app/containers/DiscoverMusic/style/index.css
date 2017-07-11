@@ -1,0 +1,19 @@
+.indexSearch{
+  background: rgb(231, 38, 49);
+  border:1px solid #333;
+  display: flex;
+  align-items: center;
+}
+.indexSearchImg{
+  padding: 5px 10px 5px 10px;
+  width: 15%;
+  height: 32px;
+}
+.indexSearchInput{
+  height: 32px;
+  width: 70%;
+  border-radius: 16px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
