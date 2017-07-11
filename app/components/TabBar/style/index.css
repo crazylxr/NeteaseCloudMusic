@@ -1,0 +1,16 @@
+.tabbarBgNormarl{
+  margin: 0;
+  color: rgb(237, 235, 244);
+  border: 2px solid #e9e9e0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  background: rgb(37, 35, 36);
+  justify-content: space-around;
+}

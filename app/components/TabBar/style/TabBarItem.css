@@ -1,0 +1,11 @@
+.TabBarItemImg{
+  width: 32px;
+  height: 32px;
+}
+.TabBarItem{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+  font-size: 12px;
+}

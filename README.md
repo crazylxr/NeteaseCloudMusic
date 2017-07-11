@@ -3,6 +3,7 @@
 
 ## 技术
 mock数据：json-server
+css module
 
 ## 即将开发的功能
 1. 登录
