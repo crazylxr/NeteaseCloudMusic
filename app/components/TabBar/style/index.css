@@ -14,3 +14,7 @@
   background: rgb(37, 35, 36);
   justify-content: space-around;
 }
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: white;
+}

@@ -9,7 +9,7 @@ import style from "./style/index.css";
     super(props);
   }
 
-  getContents(){
+  getTabs(){
       const {children} = this.props;
 
       const newChild = children.map((item, index) => {
@@ -21,11 +21,26 @@ import style from "./style/index.css";
       return newChild;
   }
 
+  getContents(){
+    const {children} = this.props;
+    console.log(children[0].props.children);
+    return (
+      <div>
+        {children[0].props.children}
+      </div>
+    );
+  }
+
   render(){
     const { children } = this.props;
     return (
-      <div className={style.tabs}>
-        {this.getContents()}
+      <div >
+        <div className={style.tabs}>
+            {this.getTabs()}
+        </div>
+        <div>
+            {this.getContents()}
+        </div>
       </div>
     );
   }
