@@ -1,0 +1,49 @@
+
+.header{
+  background: rgb(231, 38, 49);
+  text-align: center;
+  height: 42px;
+  color: #fff;
+  line-height: 42px;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.AccountInfo_center{
+  text-align: center;
+}
+.AccountInfo_button{
+  margin-top: 10px;
+  width: 90%;
+  height: 35px;
+  border: 1px solid #999;
+  background: #fff;
+  margin-left: 5%;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.space{
+  height: 10px;
+  background: #f1ecec;
+}
+
+.List_item{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.List_img{
+  width: 16px;
+  height: 16px;
+  margin: 20px;
+}
+.List_item_message{
+  width: 100%;
+  padding: 9px 0px;
+  border-bottom: 1px solid #f3f9f0;
+}

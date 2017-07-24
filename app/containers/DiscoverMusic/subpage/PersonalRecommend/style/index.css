@@ -1,0 +1,28 @@
+.nav_list{
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  border-bottom: 1px solid #eeeced;
+}
+
+.nav_item{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.nav_item_quan{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #d81e06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.nav_item_img{
+  width: 20px;
+  height: 20px;
+}

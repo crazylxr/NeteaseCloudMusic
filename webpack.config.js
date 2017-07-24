@@ -13,7 +13,7 @@ module.exports = {
       {test: /\.(js|jsx)$/, exclude: /node_modules/,use : ['babel-loader']},
       {test: /\.(png|gif|jpg|jpeg|bmp|svg|ico)$/i,loader: 'url-loader?limit=10000'}, // 限制大小10kb
       // {test: /\.(png|gif|jpg|jpeg|bmp|svg)$/i,loader: 'file-loader?name=[name].png'}, // 限制大小10kb
-      {test: /\.css$/, use: [ 'style-loader', 'css-loader?modules' ]},
+      {test: /\.css$/, use: [ 'style-loader', 'css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]' ]},
       {test: /\.less$/,use: ['style-loader',{ loader: 'css-loader', options: { importLoaders: 1 } },'less-loader']}
     ]
   },
